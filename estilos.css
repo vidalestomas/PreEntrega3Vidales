@@ -1,0 +1,255 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+  *{
+    font-family: nova square;
+  }
+.navbar{
+    background-color: black;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.navbar-brand{
+    color: goldenrod !important; 
+}
+.nav-link:hover{
+    color: rgb(238, 5, 63) !important;
+}
+
+.carousel-inner{
+    height: 600px;  
+    background-size: auto;
+    background-position: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+@media only screen and (min-width:320px){
+    .carousel-inner{
+        height: 200px;
+    }
+}
+@media only screen and (min-width:480px){
+    .carousel-inner{
+        height: 300px;
+    }
+}
+@media only screen and (min-width:768px){
+    .carousel-inner{
+       height: 500px; 
+    }
+    
+}
+h1{
+    background-color: black;
+    color: goldenrod;
+    text-align: center;
+    height: 70px;
+    margin-bottom: 0px;
+}
+h2{
+    background-color: black;
+    color: goldenrod;
+    text-align: center;
+    height: 70px;
+    margin-bottom: 0px;
+}
+.container-fluid{
+    background-color: black;
+}
+h3{
+    background-color: black;
+    color: goldenrod;
+    text-align: center;
+    height: 50px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+p:hover{
+    color: rgb(238, 5, 63);
+}
+
+
+footer{
+    background-color: black;
+    height: 100px;
+}
+h4{
+    color: rgb(238, 5, 63);
+    margin-left: 5px;
+    text-align: left;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+h6{
+    text-align: center;
+    font-size: xx-large;   
+}
+footer a{
+    text-align: center ;
+    color: goldenrod ;
+    size: 20px;
+    letter-spacing: 25px;
+}
+footer a:hover{
+    color: rgb(238, 5, 63);
+}
+
+
+
+.mt-4{
+    margin-top: 0px !important;
+    color: goldenrod !important;
+    background-color: black !important;
+    text-align: center !important;
+    margin-bottom: 0px;
+}
+h5{
+    background-color: black;
+    height: 40px;
+    text-align: center;
+    font-size: xx-large;
+    color: goldenrod;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.contenedor1{
+    color: goldenrod;
+    background-color: black;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
+@media only screen and (min-width:320px){
+    .contenedor1{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 200px);
+        display: grid;
+        grid-template-areas: 
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        "img5"
+        "img6"
+        "img7"
+        "img8";
+        padding: 20px;
+        grid-gap: 15px;
+    }
+}
+@media only screen and (min-width:480px){
+    .contenedor1{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, 200px);
+        display: grid;
+        grid-template-areas: 
+        "img1 img2"
+        "img1 img3"
+        "img4 img5"
+        "img6 img6"
+        "img7 img8";
+        padding: 20px;
+        grid-gap: 15px;
+    }
+}
+@media only screen and (min-width:768px){
+    .contenedor1{
+        height: 1000px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 200px);
+        display: grid;
+        grid-template-areas: 
+        "img1 img2 img3 img3"
+        "img1 img2 img4 img4"
+        "img5 img6 img6 img7"
+        "img5 img8 img8 img7";
+        padding: 20px;
+        grid-gap: 15px;
+    }
+}
+
+.item{
+    border: solid rgb(238, 5, 63);
+    border-radius: 5px;
+}
+.item:hover{
+    filter: grayscale(100%);
+    transform: scale(1.1);
+    transition: all 0.7s;
+}
+.item1{
+    background-image: url(imagenes.img/gintonic.jpg);
+    grid-area: img1;
+    background-size: cover;
+    background-position: center;
+}
+.item2{
+    background-image: url(imagenes.img/destilador.jpg);
+    grid-area: img2;
+    background-size: cover;
+    background-position: center;
+}
+.item3{
+    background-image: url(imagenes.img/citrus.jpg);
+    grid-area: img3;
+    background-size: cover;
+    background-position: center;
+}
+.item4{
+    background-image: url(imagenes.img/pexels-charlotte-may-5947035.jpg);
+    grid-area: img4;
+    background-size: cover;
+    background-position: center;
+}
+.item5{
+    background-image: url(imagenes.img/botanicos.jpg);
+    grid-area: img5;
+    background-size: cover;
+    background-position: center;
+}
+.item6{
+    background-image: url(imagenes.img/cubosdehielo.jpg);
+    grid-area: img6;
+    background-size: cover;
+    background-position: center;
+}
+.item7{
+    background-image: url(imagenes.img/enebro.jpg);
+    grid-area: img7;
+    background-size: cover;
+    background-position: center;
+}
+.item8{
+    background-image: url(imagenes.img/pexels-karolina-grabowska-4021983.jpg);
+    grid-area: img8;
+    background-size: cover;
+    background-position: center;
+}  
+@media only screen and (min-width:320px){
+    .card{
+        height: auto;
+        background-size: cover;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:480px){
+    .card{
+        height: auto;
+        background-size: cover;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:768px){
+    .card{
+        height: auto;
+        background-size: cover;
+        width: 100%;
+    }
+}
+body{
+    background-color: black;
+}
